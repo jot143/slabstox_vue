@@ -1,0 +1,15 @@
+.btn-auth{
+    padding: 10px 60px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.btn-auth svg{
+    margin-right: 15px;
+}
+
+.guest-auth-link a{
+    text-transform: uppercase;
+    color: #ababab;
+    font-weight: bolder;
+}
