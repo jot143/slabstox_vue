@@ -19,7 +19,7 @@
               </b-input-group-prepend>
               <b-form-input
                 id="input-register-fullname"
-                v-model="form.fullname"
+                v-model="form.first_name"
                 aria-describedby="input-register-fullname-help input-register-fullname-feedback"
                 placeholder="Fullname"
                 trim
@@ -104,7 +104,7 @@ export default {
   data() {
     return {
       form: {
-        fullname: '',
+        first_name: '',
         email: '',
         password: ''
       }

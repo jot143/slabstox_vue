@@ -8,7 +8,7 @@
           <b-nav-item-dropdown right v-if="authenticated">
             <!-- Using 'button-content' slot -->
             <template v-slot:button-content>
-              <em>{{ user.name }}</em>
+              <em>{{ user.first_name +' '+ user.last_name }}</em>
             </template>
             <b-dropdown-item to="/dashboard">Dashboard</b-dropdown-item>
             <b-dropdown-item @click="logout">Logout</b-dropdown-item>

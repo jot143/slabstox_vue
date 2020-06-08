@@ -89,5 +89,6 @@ sw.*
 # Vim swap files
 *.swp
 
-.git_dev
+
 .git_pro
+.git_dev

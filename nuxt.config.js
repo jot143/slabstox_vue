@@ -86,7 +86,7 @@ export default {
     },
 
     env: {
-        baseUrl: process.env.BASE_URL || 'http://127.0.0.1:8000/api/'
+        baseUrl: process.env.BASE_URL || 'http://slabstox-api.rcubinity.com/api/'
     },
 
     /*
@@ -94,7 +94,7 @@ export default {
      ** See https://axios.nuxtjs.org/options
      */
     axios: {
-        baseURL: process.env.BASE_URL || 'http://127.0.0.1:8000/api/',
+        baseURL: 'http://slabstox-api.rcubinity.com/api/',
         progress: true,
     },
 
