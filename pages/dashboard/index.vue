@@ -4,8 +4,8 @@
       <h2 class="title">My Profile</h2>
       <div class="content">
         <p>
-          <strong>Username:</strong>
-          {{ user.first_name +' '+ user.last_name }}
+          <strong>Name:</strong>
+          {{ user_fullname }}
         </p>
         <p>
           <strong>Email:</strong>

@@ -86,7 +86,7 @@ export default {
     },
 
     env: {
-        baseUrl: process.env.BASE_URL || 'http://slabstox-api.rcubinity.com/api/'
+        baseUrl: process.env.BASE_URL || 'https://slabstox-ssl.local/api/'
     },
 
     /*
@@ -94,7 +94,7 @@ export default {
      ** See https://axios.nuxtjs.org/options
      */
     axios: {
-        baseURL: 'http://slabstox-api.rcubinity.com/api/',
+        baseURL: 'https://slabstox-ssl.local/api/',
         progress: true,
     },
 

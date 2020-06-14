@@ -5,14 +5,17 @@
       <b-collapse id="nav-collapse" is-nav>
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-          <b-nav-item-dropdown right v-if="authenticated">
-            <!-- Using 'button-content' slot -->
-            <template v-slot:button-content>
-              <em>{{ user.first_name +' '+ user.last_name }}</em>
-            </template>
-            <b-dropdown-item to="/dashboard">Dashboard</b-dropdown-item>
-            <b-dropdown-item @click="logout">Logout</b-dropdown-item>
-          </b-nav-item-dropdown>
+          <template v-if="authenticated">
+            <b-nav-item-dropdown right>
+              <!-- Using 'button-content' slot -->
+              <template v-slot:button-content>
+                <em>{{ user_fullname }}</em>
+              </template>
+              <b-dropdown-item to="/dashboard">Dashboard</b-dropdown-item>
+              <b-dropdown-item @click="logout">Logout</b-dropdown-item>
+            </b-nav-item-dropdown>
+            <b-nav-item to="/products">Products</b-nav-item>
+          </template>
           <template v-else>
             <b-nav-item to="/auth/login">Sign in</b-nav-item>
             <b-nav-item to="/auth/register">Sign up</b-nav-item>
