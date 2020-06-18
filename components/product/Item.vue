@@ -10,6 +10,7 @@
       class="mb-2 img-thumbnail"
     >
       <b-card-text><strong>Category</strong> : {{(details.category) ? details.category.name : '-'}}</b-card-text>
+      <b-button @click="addToCart()" variant="primary" title="Add to Cart"><font-awesome-icon :icon="['fas', 'cart-plus']" /></b-button>
     </b-card>
   </div>
 </template>
@@ -22,6 +23,11 @@ export default {
 
     }
   },
+  methods: {
+    addToCart() {
+      this.$store.dispatch('cart/addToCart', this.details)
+    }
+  }
 
 }
 </script>
